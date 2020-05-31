@@ -17,8 +17,7 @@ const publicRoutes = require('./routes/public');
 const mobileRoutes = require('./routes/mobile');
 const errorController = require('./controllers/error');
 
-const MONGODB_URI = 'mongodb+srv://ayush:donate123@cluster0-mhayo.mongodb.net/test?retryWrites=true&w=majority';
-
+const MONGODB_URI = m@cluster0-mhayo.mongodb.net/test?retryWrites=true&w=majority';
 const app = express();
 const store = new MongoDBStore({
     uri: MONGODB_URI,
@@ -47,11 +46,6 @@ const fileFilter = (req, file, cb) => {
     }
 };
 
-// aws.config.update({
-//     accessKeyId: 'AKIAJVTFNJLMLNIVQ6UA',
-//     secretAccessKey: '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',
-//     region: 'ap-south-1'
-// });
 
 // const s3 = new aws.S3();
 
